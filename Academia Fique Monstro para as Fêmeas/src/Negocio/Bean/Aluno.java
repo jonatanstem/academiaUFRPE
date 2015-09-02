@@ -8,7 +8,8 @@ public class Aluno extends Pessoa implements Serializable {
 	private Treino treino;
 	private int faltas;
 
-	public Aluno(String Nome, String Login, String Senha, int idade, String CPF, int Matricula, Professor professor, Treino treino) {
+	public Aluno(String Nome, String Login, String Senha, int idade,
+			String CPF, int Matricula, Professor professor, Treino treino) {
 		super(Nome, Login, Senha, CPF, idade);
 		this.matricula = Matricula;
 		this.professor = professor;
@@ -16,19 +17,14 @@ public class Aluno extends Pessoa implements Serializable {
 		faltas = 0;
 
 	}
-	
-	
+
 	public Professor getProfessor() {
 		return professor;
 	}
 
-
-
 	public void setProfessor(Professor professor) {
 		this.professor = professor;
 	}
-
-
 
 	public int getMatricula() {
 		return this.matricula;
