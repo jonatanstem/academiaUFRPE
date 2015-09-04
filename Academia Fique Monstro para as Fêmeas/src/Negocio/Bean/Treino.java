@@ -4,5 +4,5 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Treino implements Serializable {
-	private ArrayList<String> treinos = new ArrayList();
+	private ArrayList<String> exercicios = new ArrayList();
 }
